@@ -1,0 +1,16 @@
+.about-description{
+    width: 100%;
+    height: fit-content;
+    min-height: 50vh;
+    background-color: var(--alt-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.about-description p, .about-description h1{
+    color: var(--main-color);
+}

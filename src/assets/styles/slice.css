@@ -1,0 +1,43 @@
+.slice-container{
+    width: 100%;
+    height: 50vh;
+}
+
+.image-slice{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0 ;
+}
+
+.image-slice h1{
+    position: relative;
+    color: var(--light-color-text);
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 60px;
+}
+
+.image-slice h1::after{
+    content: '';
+    position: absolute;
+    top: 105%;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: var(--light-color-text);
+}
+
+.filter-slice{
+    width: 100%;
+    height: 100%;
+    background-color: var(--filter-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

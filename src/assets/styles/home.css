@@ -1,0 +1,82 @@
+.home-container{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/homeImage.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.nav-container{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 1.5rem;
+    z-index: 100 !important;
+}
+
+.navbar{
+    width: 100%;
+}
+
+.nav-link{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--light-color-text);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler{
+    border: none;
+    border-radius: none;
+}
+
+.nav-container{
+    background-color: #151515bd;
+    backdrop-filter: blur(800px);
+}
+
+.filter-image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: var(--filter-color);
+}
+
+.navbar-toggler-icon {
+    background-image: url('../images/burgerMenu.svg');
+}
+
+.cheLogo{
+    width: calc(100% - 3rem);
+    max-width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.cheLogo img{
+    width: 100%;
+    height: 100%;
+
+}
+
+/* 
+    mirar el psudoelemetno active
+
+    .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: var(--bs-navbar-active-color);
+
+    porque se mantiene el color despues de haberlo presionado
+}
+*/
