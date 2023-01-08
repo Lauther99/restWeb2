@@ -3,10 +3,11 @@ import Slice from '../components/Slice';
 import aboutBg from '../assets/images/caldoImg.jpeg'
 import HighlightedText from '../components/HighlightedText';
 import '../assets/styles/about.css'
+import { Element } from 'react-scroll';
 
 const About = () => {
     return (
-        <section className='about-container'>
+        <section className='about-container' id='about'>
             <Slice
                 title={'QUIÉNES'}
                 title2={'SOMOS'}

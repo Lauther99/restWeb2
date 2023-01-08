@@ -3,11 +3,12 @@ import HighlightedText from '../components/HighlightedText';
 import Slice from '../components/Slice';
 import menuBg from '../assets/images/menuBg.jpeg'
 import '../assets/styles/menu.css'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
+import { Element } from 'react-scroll';
 
 const Menu = () => {
     return (
-        <section className='menu-container'>
+        <section className='menu-container' id='menu'>
             <div className='slogan-container'>
                 <h1>
                     Desde el corazón de nuestro hogar

@@ -11,8 +11,7 @@ import Contact from './Contact';
 const Home = () => {
     return (
         <section className='home-container' id='home'>
-            <NavBar />
-            <div className='filter-image'></div>
+            <div className='filter-image' ></div>
             <div className='cheLogo'>
                 <img src={Logo} alt=""/>
             </div>

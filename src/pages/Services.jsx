@@ -26,7 +26,7 @@ const Services = () => {
     }
 
     return (
-        <section className='services-container'>
+        <section className='services-container' id='services'>
             <Slice
                 title={'SERVICIOS'}
                 bgImage={servicesBg}
