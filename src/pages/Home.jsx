@@ -6,6 +6,7 @@ import Menu from './Menu';
 import Services from './Services';
 import About from './About';
 import Reviews from './Reviews';
+import Contact from './Contact';
 
 const Home = () => {
     return (
@@ -19,6 +20,7 @@ const Home = () => {
             <Services />
             <About />
             <Reviews />
+            <Contact />
         </section>
     );
 };
