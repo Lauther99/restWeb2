@@ -1,12 +1,18 @@
+@font-face {
+    font-family: 'BREAKSTEEL';
+    src: url('../src/assets/fonts/font_displayed/DISPLAYED\ Oblique.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     transition: all .5s;
 }
 
-:root{
+:root {
     --main-color: #722d14;
     --main-bg-color: #eee;
     --alt-bg-color: #fdeec9;
@@ -18,7 +24,7 @@
     --filter-color: #1515159a;
 }
 
-html{
+html {
     overflow-x: hidden;
     background-color: var(--main-bg-color);
 }
@@ -27,22 +33,28 @@ body {
     min-height: 100vh;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-ul, li, a{
+ul,
+li,
+a {
     text-decoration: none;
     list-style: none;
 }
 
-button{
+button {
     border: none;
     cursor: pointer;
 }
 
-h3{
+h3 {
     color: var(--main-color);
     font-weight: 600;
     font-size: 14px;
+}
+
+h1{
+    font-family: BREAKSTEEL, sans-serif;
 }
