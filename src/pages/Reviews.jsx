@@ -1,12 +1,19 @@
-import { GoogleMap, useLoadScript } from '@react-google-maps/api';
+
 import React from 'react';
 import Slice from '../components/Slice';
 import '../assets/styles/reviews.css'
 import reviewsBg from '../assets/images/clientsBg.jpeg'
-import GoogleMapsReviews from 'google-maps-reviews';
 
 const Reviews = () => {
 
+    jQuery(document).ready(function ($) {
+        $("#google-reviews").googlePlaces({
+            placeId: 'ChIJVciP10hFNpARL2Zs3d1vuhk'
+            , render: ['reviews']
+            , min_rating: 4
+            , max_rows: 4
+        });
+    });
 
 
     return (
