@@ -66,8 +66,8 @@
     }
 
     .services-cards .card-container .card-image{
-        width: 40px;
-        height: 40px;
+        width: calc(8px + 1.5vw);
+        height: calc(8px + 1.5vw);
     }
 
     .services-cards .card-container h1 {

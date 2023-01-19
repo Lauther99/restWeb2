@@ -22,7 +22,6 @@ const NavBar = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-            <div>a</div>
         </header>
 
     );
