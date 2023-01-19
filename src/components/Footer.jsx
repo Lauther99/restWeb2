@@ -25,12 +25,12 @@ const Footer = () => {
             <div className='social-div'>
                 <h3>Síguenos en:</h3>
                 <div className='social-icons'>
-                    <a href="https://www.instagram.com" target="_blank"><i className="fa-brands fa-instagram fa-xl"></i></a>
-                    <a href="https://www.facebook.com/MatthewDota" target="_blank"><i className="fa-brands fa-facebook fa-xl"></i></a>
+                    {/* <a href="https://www.instagram.com" target="_blank"><i className="fa-brands fa-instagram fa-xl"></i></a> */}
+                    <a href="https://www.facebook.com/dondelcheperu" target="_blank"><i className="fa-brands fa-facebook fa-xl"></i></a>
                 </div>
             </div>
             <div className='logo-div'>
-                <img src={logoChe} alt="Resaurante Donde el che Talara" />
+                <Link to="home"><img src={logoChe} alt="Resaurante Donde el che Talara" /></Link>
                 <p>Copyright © 2023 Donde el che. All rights reserved.</p>
             </div>
         </article>

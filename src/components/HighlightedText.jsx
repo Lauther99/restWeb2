@@ -4,7 +4,9 @@ const HighlightedText = ({ text, bgColor, colorText }) => {
 
     return (
         <article>
-            <div className="highlight" style={{ backgroundColor: `var(${bgColor})`, color: `var(${colorText})` }}>
+            <div className="highlight"
+                style={{ backgroundColor: `var(${bgColor})`, color: `var(${colorText})` }}
+            >
                 {text}
             </div>
         </article>

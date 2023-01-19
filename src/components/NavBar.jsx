@@ -13,6 +13,7 @@ const NavBar = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav>
+                            <Nav.Link ><Link to="home">Inicio</Link></Nav.Link>
                             <Nav.Link ><Link to="menu">Menu</Link></Nav.Link>
                             <Nav.Link ><Link to="/">Galería</Link></Nav.Link>
                             <Nav.Link ><Link to="about">Nosotros</Link></Nav.Link>
@@ -21,6 +22,7 @@ const NavBar = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+            <div>a</div>
         </header>
 
     );

@@ -9,22 +9,6 @@ import delivery from '../assets/images/delivery.svg'
 import dish from '../assets/images/dish.svg'
 
 const Services = () => {
-    const styleCard = {
-        width: '130px',
-        height: '130px',
-        backgroundImage: `url(${birthdayCake})`
-    }
-    const styleCard2 = {
-        width: '130px',
-        height: '130px',
-        backgroundImage: `url(${delivery})`
-    }
-    const styleCard3 = {
-        width: '130px',
-        height: '130px',
-        backgroundImage: `url(${dish})`
-    }
-
     return (
         <section className='services-container' id='services'>
             <Slice
@@ -33,8 +17,8 @@ const Services = () => {
                 bgColorSlice={'--main-bg-color'}
             />
             <article className='services-details'>
-                <p>Atendiendo desde 2009</p>
-                <h1>
+                <p data-aos="slide-right">Atendiendo desde 2009</p>
+                <h1 data-aos="slide-right">
                     A tu servicio por
                     <HighlightedText
                         text={'más de 13 años'}
@@ -42,21 +26,21 @@ const Services = () => {
                         bgColor={'--main-highlight-bg'}
                     />
                 </h1>
-                <article className='services-cards'>
+                <article className='services-cards' data-aos="fade">
                     <CardStandart
                         cardTitle={'Birthday Catering'}
                         cardDescription={'Celebra tu cumpleaños con nosotros!'}
-                        styleCardImage={styleCard}
+                        bgImage={birthdayCake}
                     />
                     <CardStandart
                         cardTitle={'Delivery'}
                         cardDescription={'¿Te gustaría solicitar un servicio de entrega a domicilio?'}
-                        styleCardImage={styleCard2}
+                        bgImage={delivery}
                     />
                     <CardStandart
                         cardTitle={'Visítanos'}
                         cardDescription={'Prueba nuestros deliciosos platos! ¡Te esperamos! '}
-                        styleCardImage={styleCard3}
+                        bgImage={dish}
                     />
                 </article>
             </article>

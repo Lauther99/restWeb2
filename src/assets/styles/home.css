@@ -8,50 +8,11 @@
     position: relative;
 }
 
-.nav-container{
-    position: fixed;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    padding: 1.5rem;
-    z-index: 100 !important;
-}
-
-.navbar{
-    width: 100%;
-}
-
-.nav-link{
-    text-align: center;
-    font-size: 40px;
-    font-weight: 600;
-    color: var(--light-color-text);
-}
-
-.navbar-toggler:focus {
-    box-shadow: none;
-}
-
-.navbar-toggler{
-    border: none;
-    border-radius: none;
-}
-
-.nav-container{
-    background-color: #151515bd;
-    backdrop-filter: blur(800px);
-}
-
 .filter-image{
     position: relative;
     width: 100%;
     height: 100%;
     background-color: var(--filter-color);
-}
-
-.navbar-toggler-icon {
-    background-image: url('../images/burgerMenu.svg');
 }
 
 .cheLogo{

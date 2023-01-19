@@ -1,35 +1,31 @@
 import React from 'react';
 import Slice from '../components/Slice';
 import contactBg from '../assets/images/contactImg.jpeg'
-import { Link } from 'react-router-dom';
 import HighlightedText from '../components/HighlightedText'
-import Footer from '../components/Footer';
 import wspIcon from '../assets/images/wsp.svg'
 import phoneIcon from '../assets/images/phone.svg'
 import '../assets/styles/contact.css'
 
 const Contact = () => {
     return (
-        <section id='contact'>
+        <section id='contact' className='contact-container'>
             <Slice title={'DESEAS REALIZAR UNA'} title2={'RESERVA?'} bgImage={contactBg} />
-            <article className='contact-container'>
-                <div className='contact-item'>
+            <article className='contact-sc-container' data-aos="fade">
+                <a href={'https://api.whatsapp.com/send?phone=%2B51956433143&text='} target="_blank" className='contact-item'>
                     <div className='contact-icon' style={{ backgroundImage: `url(${wspIcon})` }}></div>
                     <p>
                         Comunícate con nosotros a nuestro whatsapp
-                        <a href={'https://api.whatsapp.com/send?phone=%2B51956433143&text='} target="_blank">
-                            <HighlightedText
-                                text={'aquí'}
-                                bgColor={'--main-highlight-bg'}
-                                colorText={'--main-color'}
-                            />
-                        </a>
+                        <HighlightedText
+                            text={'aquí'}
+                            bgColor={'--main-highlight-bg'}
+                            colorText={'--main-color'}
+                        />
                     </p>
-                </div>
-                <div className='contact-item'>
+                </a>
+                <div className='contact-item' data-aos="fade">
                     <div className='contact-icon' style={{ backgroundImage: `url(${phoneIcon})` }}></div>
                     <p>
-                        Tambien puedes llamarnos al
+                        También puedes llamarnos al
                         <HighlightedText
                             text={'+51 956 433 143'}
                             bgColor={'--main-highlight-bg'}
@@ -38,7 +34,6 @@ const Contact = () => {
                     </p>
                 </div>
             </article>
-            <Footer />
         </section>
     );
 };

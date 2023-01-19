@@ -17,16 +17,9 @@ const Reviews = () => {
 
 
     return (
-        <section>
+        <section id='reviews' className='reviews-container'>
             <Slice title={'NUESTROS'} title2={'CLIENTES'} title3={'OPINAN'} bgImage={reviewsBg}/>
-            {/* <div className='map-container'>
-                <GoogleMap
-                    zoom={10}
-                    center={{ lat: 44, lng: -80 }}
-                    mapContainerClassName="map-container">
-                </GoogleMap> 
-            </div>*/}
-            <div id='google-reviews'></div>
+            <div id='google-reviews' data-aos='fade'></div>
         </section>
     );
 };

@@ -3,6 +3,7 @@
     padding: 5rem 2rem;
     background-color: var(--main-bg-color);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -28,6 +29,7 @@
 }
 
 .menu-description p{
+    padding: 0 2rem;
     max-width: 550px;
     font-size: 16px;
     color: var(--main-color);
@@ -36,4 +38,21 @@
 .menu-description a{
     font-size: 30px;
     font-weight: 600;
+}
+
+@media screen and (min-width: 1024px){
+    .menu-container{
+        width: 100vw;
+        min-height: 50vh;
+        display: flex;
+        flex-direction: row;
+    }
+    .menu-description{
+        width: 50vw;
+        height: 100vh;
+    }
+
+    .slogan-container{
+        height: 50vh;
+    }
 }

@@ -12,25 +12,68 @@
 
 .services-details p{
     color: var(--main-color);
+    margin-bottom: 5px;
 }
 
 .services-details h1{
     text-align: center;
-    font-size: 32px;
+    font-size: 22px;
     font-weight: 600;
     color: var(--main-color);
     line-height: 60px;
     display: flex;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 
 .services-cards{
-    padding: 2rem;
+    padding: 1rem;
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 2rem;
     flex-wrap: wrap;
     background-color: var(--main-bg-color);
+}
+
+@media screen and (min-width: 1024px){
+    .services-container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    .services-cards{
+        gap: 0rem;
+    }
+
+    .services-details{
+        width: 50vw;
+        height: 100vh;
+    }
+
+    
+    .services-cards .card-container{
+        width: 180px;
+        height: 180px;        
+        margin-bottom: .7rem;
+    }
+
+    .services-cards .card-container .card-image{
+        width: 40px;
+        height: 40px;
+    }
+
+    .services-cards .card-container h1 {
+        height: 3rem;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .services-cards .card-container p {
+        font-size: 12px;
+    }
+
 }

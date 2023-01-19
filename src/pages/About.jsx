@@ -3,7 +3,6 @@ import Slice from '../components/Slice';
 import aboutBg from '../assets/images/caldoImg.jpeg'
 import HighlightedText from '../components/HighlightedText';
 import '../assets/styles/about.css'
-import { Element } from 'react-scroll';
 
 const About = () => {
     return (
@@ -13,14 +12,14 @@ const About = () => {
                 title2={'SOMOS'}
                 bgImage={aboutBg}
             />
-            <article className='about-description'>
-                <h1>Somos</h1>
+            <article className='about-description' >
+                <h1 data-aos="slide-right">Somos</h1>
                 <HighlightedText
                     text={'Donde el Che'}
                     bgColor={'--main-bg-color'}
                     colorText={'--main-color'}
                 />
-                <p>
+                <p data-aos="slide-left">
                     It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
                 </p>
             </article>
