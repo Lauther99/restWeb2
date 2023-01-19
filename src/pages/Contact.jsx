@@ -15,23 +15,23 @@ const Contact = () => {
                     <div className='contact-icon' style={{ backgroundImage: `url(${wspIcon})` }}></div>
                     <p>
                         Comunícate con nosotros a nuestro whatsapp
-                        <HighlightedText
-                            text={'aquí'}
-                            bgColor={'--main-highlight-bg'}
-                            colorText={'--main-color'}
-                        />
                     </p>
+                    <HighlightedText
+                        text={'aquí'}
+                        bgColor={'--main-highlight-bg'}
+                        colorText={'--main-color'}
+                    />
                 </a>
                 <div className='contact-item' data-aos="fade">
                     <div className='contact-icon' style={{ backgroundImage: `url(${phoneIcon})` }}></div>
                     <p>
-                        También puedes llamarnos al
-                        <HighlightedText
-                            text={'+51 956 433 143'}
-                            bgColor={'--main-highlight-bg'}
-                            colorText={'--main-color'}
-                        />
+                        También puedes <br />llamarnos al
                     </p>
+                    <HighlightedText
+                        text={'956 433 143'}
+                        bgColor={'--main-highlight-bg'}
+                        colorText={'--main-color'}
+                    />
                 </div>
             </article>
         </section>
