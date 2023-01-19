@@ -8,17 +8,16 @@ const Footer = () => {
             <ul className="footer-link">
                 <Link to="home">Inicio</Link>
                 <Link to="menu">Menú</Link>
-                <Link to="galery">Galería</Link>
-                <Link to="about">Nosotros</Link>
                 <Link to="services">Servicios</Link>
+                <Link to="about">Nosotros</Link>
                 <Link to="contact">Contáctanos</Link>
+                <Link to="gallery">Galería</Link>
             </ul>
-
             <div className='location-div'>
                 <h3>Ubícanos en:</h3>
                 <p><i className="fa-solid fa-location-dot"></i> Av. A-49b lateral - Talara, Perú</p>
                 <h3>Contáctanos</h3>
-                <p><i className="fa-solid fa-phone"></i> +51 123 123 123</p>
+                <p><i className="fa-solid fa-phone"></i> +51 956 433 143</p>
                 <h3>Escríbenos</h3>
                 <p><i className="fa-solid fa-envelope"></i> mailto@gmail.com</p>
             </div>
@@ -34,7 +33,6 @@ const Footer = () => {
                 <p>Copyright © 2023 Donde el che. All rights reserved.</p>
             </div>
         </article>
-
     );
 };
 

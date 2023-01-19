@@ -15,7 +15,7 @@ const NavBar = () => {
                         <Nav>
                             <Nav.Link ><Link to="home">Inicio</Link></Nav.Link>
                             <Nav.Link ><Link to="menu">Menu</Link></Nav.Link>
-                            <Nav.Link ><Link to="/">Galería</Link></Nav.Link>
+                            <Nav.Link ><Link to="services">Servicios</Link></Nav.Link>
                             <Nav.Link ><Link to="about">Nosotros</Link></Nav.Link>
                             <Nav.Link ><Link to="contact">Contáctanos</Link></Nav.Link>
                         </Nav>
