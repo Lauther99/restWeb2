@@ -52,12 +52,16 @@
     .services-details{
         width: 50vw;
         height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     
     .services-cards .card-container{
-        width: 180px;
-        height: 180px;        
+        width: calc(150px + 5vw);
+        height: calc(140px + 5vh);        
         margin-bottom: .7rem;
     }
 
@@ -74,6 +78,10 @@
 
     .services-cards .card-container p {
         font-size: 12px;
+    }
+
+    .services-cards .card-container:hover{
+        transform: scale(1.05);
     }
 
 }
