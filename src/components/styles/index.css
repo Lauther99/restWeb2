@@ -1,16 +1,4 @@
 /* ************** Navbar Style ************** */
-.nav-container {
-    position: fixed;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    padding: 1.5rem;
-    z-index: 100 !important;
-    background-color: #151515bd;
-    backdrop-filter: blur(800px);
-}
 
 .navbar {
     width: 100%;
@@ -166,12 +154,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: var(--alt-bg-color);
+    background-color: rgb(56, 39, 22);
 }
 
 .footer-container ul {
     margin-bottom: 0;
-    color: var(--main-color);
+    color: #fff;
 }
 
 .logo-div {
@@ -187,7 +175,7 @@
 .logo-div p {
     text-align: center;
     font-size: 12px;
-    color: var(--main-color);
+    color: #fff;
 }
 
 .footer-link {
@@ -206,7 +194,8 @@
 .location-div p {
     text-align: start;
     font-size: 12px;
-    color: var(--main-color);
+    color: #fff;
+    margin-bottom: 10px;
 }
 
 .social-div {
@@ -218,12 +207,13 @@
 }
 
 .social-icons {
+    margin-top: 10px;
     display: flex;
     gap: 1rem;
 }
 
 .social-icons a {
-    color: var(--main-color);
+    color: #fff;
 }
 
 
@@ -233,7 +223,7 @@
 
 @media screen and (min-width: 1024px) {
     .nav-container {
-        height: 60px;
+        height: 100px;
         position: absolute;
         padding: 0 1.5rem;
     }
@@ -279,3 +269,4 @@
 .logo-div img:hover{
     transform: scale(1.1);
 }
+

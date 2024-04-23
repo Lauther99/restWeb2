@@ -1,21 +1,21 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import logoChe from '../assets/images/logoChe.png'
+import logoChe from '../assets/images/logoChe3.png'
 
 const Footer = () => {
     return (
         <article className='footer-container'>
-            <ul className="footer-link">
+            {/* <ul className="footer-link">
                 <Link to="home">Inicio</Link>
                 <Link to="menu">Menú</Link>
                 <Link to="services">Servicios</Link>
                 <Link to="about">Nosotros</Link>
                 <Link to="contact">Contáctanos</Link>
                 <Link to="gallery">Galería</Link>
-            </ul>
+            </ul> */}
             <div className='location-div'>
                 <h3>Ubícanos en:</h3>
-                <p><i className="fa-solid fa-location-dot"></i> Av. A-49b lateral - Talara, Perú</p>
+                <p><i className="fa-solid fa-location-dot"></i> Av. A 47-49b lateral - Talara, Perú</p>
                 <h3>Contáctanos</h3>
                 <p><i className="fa-solid fa-phone"></i> +51 956 433 143</p>
                 <h3>Escríbenos</h3>
@@ -24,13 +24,13 @@ const Footer = () => {
             <div className='social-div'>
                 <h3>Síguenos en:</h3>
                 <div className='social-icons'>
-                    {/* <a href="https://www.instagram.com" target="_blank"><i className="fa-brands fa-instagram fa-xl"></i></a> */}
+                    <a href="https://www.instagram.com/dondelche/" target="_blank"><i className="fa-brands fa-instagram fa-xl"></i></a>
                     <a href="https://www.facebook.com/dondelcheperu" target="_blank"><i className="fa-brands fa-facebook fa-xl"></i></a>
                 </div>
             </div>
             <div className='logo-div'>
                 <Link to="home"><img src={logoChe} alt="Resaurante Donde el che Talara" /></Link>
-                <p>Copyright © 2023 Donde el che. All rights reserved.</p>
+                <p>Copyright © 2024 Donde el Che. Todos los derechos reservados.</p>
             </div>
         </article>
     );

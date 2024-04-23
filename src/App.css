@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Belgrano&family=Merriweather:wght@400;700;900&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belgrano&family=Merriweather:wght@100;400;700;900&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root {
     --main-color: #722d14;
@@ -9,10 +11,11 @@
     --light-color-text: #eee;
     --alt-color-text: #878787;
 
-    --filter-color: #1515159a;
+    --filter-color: #15151557;
 
-    --str-font: 'Secular One', sans-serif;
-    --main-font: 'Merriweather', serif;
+    --str-font: "Rubik", sans-serif;
+    /* --str-font: 'Secular One', sans-serif; */
+    --text-font: "Open Sans", sans-serif;
 }
 
 * {
@@ -20,7 +23,7 @@
     padding: 0;
     box-sizing: border-box;
     transition: all .5s;
-    font-family: var(--main-font);
+    font-family: var(--str-font);
 }
 
 html {
@@ -50,13 +53,21 @@ button {
 }
 
 h3 {
-    color: var(--main-color);
-    font-weight: 600;
+    color: #fff;
+    font-weight: 100;
     font-size: 14px;
 }
 
-h1{
-    font-family: 'Secular One', sans-serif;
+p {
+    font-weight: 300;
+    font-size: 14px;
+    font-family: var(--text-font);
+}
+
+
+h1, h2{
+    font-weight: 100;
+    font-family: var(--str-font);
 }
 
 /* 
