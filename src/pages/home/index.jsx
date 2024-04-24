@@ -32,6 +32,12 @@ const Home = () => {
         }
     ];
 
+    const linkPedido = "https://api.whatsapp.com/send?phone=51956433143&text=Quiero%20hacer%20un%20pedido"
+
+    const linkCartaPdf = "https://acortar.link/TlnolE"
+    const linkCartaDrive = "https://acortar.link/eQTpxK"
+    const linkGMaps = "https://acortar.link/cdvAzH"
+
     return (
         <main className='home-container' id='home'>
             <div className='top-bar'>
@@ -45,9 +51,9 @@ const Home = () => {
                     <li><h2>Desde el corazón de nuestro hogar</h2></li>
                     <li><h2>hacia el tuyo...</h2></li>
                     <li>
-                        <button className='btn-box'>
+                        <a className='btn-box' href={linkPedido} target='_blank' rel='noopener noreferrer'>
                             Haz tu pedido
-                        </button>
+                        </a>
                     </li>
                 </ul>
             </section>
@@ -64,7 +70,7 @@ const Home = () => {
                     <ul>
                         <li><h2 className='section-title'>Explora Nuestro Menú</h2></li>
                         <li><p className='section-text'>Explora nuestra selección de sabores marinos, parrillas, ceviches y más. En nuestra carta encontrarás una variedad de platillos deliciosos, preparados con los mejores ingredientes para satisfacer tu apetito y deleitar tu paladar. Sumérgete en una experiencia culinaria inolvidable con nosotros.</p></li>
-                        <li><button className='btn-box'>Nuestra carta</button></li>
+                        <li><a className='btn-box' href={linkCartaDrive} target='_blank' rel='noopener noreferrer'>Nuestra carta</a></li>
                     </ul>
                 </article>
             </section>
@@ -77,7 +83,7 @@ const Home = () => {
                     <ul>
                         <li><h2 className='section-title'>Encuéntranos</h2></li>
                         <li><p className='section-text'>Estamos ubicados en Av. A 47-49 Lateral, frente a la Municipalidad provincial de Talara.</p></li>
-                        <li><button className='btn-box'>Ver en maps</button></li>
+                        <li><a className='btn-box' href={linkGMaps} target='_blank' rel='noopener noreferrer'>Ver en maps</a></li>
                     </ul>
                 </article>
             </section>
@@ -90,15 +96,11 @@ const Home = () => {
                             <p className='section-text'>Disfruta de nuestros deliciosos platillos en casa.</p>
                             <p className='section-text'>Realiza tu pedido y nosotros te lo llevamos.</p>
                         </li>
-                        <li><button className='btn-box'>Haz tu pedido ahora</button></li>
+                        <li><a className='btn-box' href={linkPedido} target='_blank' rel='noopener noreferrer'>Haz tu pedido ahora</a></li>
                     </ul>
                 </article>
             </section>
 
-            {/* <Services /> */}
-            {/* <About />
-            <Reviews />
-            <Contact />*/}
             <Footer />
         </main>
     );
