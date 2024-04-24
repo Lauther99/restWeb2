@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CardStandart = ({cardTitle, cardDescription, bgImage}) => {
+const Card = ({cardTitle, cardDescription, bgImage}) => {
     return (
         <article className='card-container'>
             <div className='card-image' style={{backgroundImage: `url(${bgImage})`}}></div>
@@ -10,4 +10,4 @@ const CardStandart = ({cardTitle, cardDescription, bgImage}) => {
     );
 };
 
-export default CardStandart;
+export default Card;

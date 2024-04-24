@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import logoChe from '../assets/images/logoChe3.png'
+import logoChe from '../assets/images/logoChe2.jpg'
 
 const Footer = () => {
     return (
@@ -29,7 +29,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='logo-div'>
-                <Link to="home"><img src={logoChe} alt="Resaurante Donde el che Talara" /></Link>
+                <Link to="home"><img src={logoChe} alt="Restaurante Donde el che Talara" /></Link>
                 <p>Copyright © 2024 Donde el Che. Todos los derechos reservados.</p>
             </div>
         </article>

@@ -46,105 +46,6 @@
     background-image: url('../images/burgerMenu.svg');
 }
 
-/* ************** HIGHLIGHT TEXT ************** */
-
-.highlight {
-    font-size: calc(18px + 1vh);
-    display: inline-block;
-    width: fit-content;
-    padding: 0 2rem;
-    position: relative;
-    clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0 100%);
-    text-align: center;
-    font-weight: 600;
-}
-
-/* ************** CARD STYLES ************** */
-
-.card-container {
-    width: 240px;
-    height: 300px;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.493);
-    backdrop-filter: blur(400px);
-    border-radius: 2rem;
-}
-
-.card-container h1 {
-    font-size: 20px;
-    margin: 0;
-}
-
-.card-container p {
-    color: var(--alt-color-text);
-    font-size: 14px;
-    font-weight: 600;
-    text-align: center;
-    margin: 0;
-}
-
-.card-image {
-    width: 130px;
-    height: 130px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-
-/* ************** SLICE STYLES ************** */
-
-.slice-container {
-    width: 100%;
-    height: 50vh;
-}
-
-.image-slice {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 0;
-}
-
-.image-slice h1 {
-    position: relative;
-    color: var(--light-color-text);
-    font-size: 40px;
-    font-weight: 600;
-    text-align: center;
-    line-height: 60px;
-}
-
-.image-slice h1::after {
-    content: '';
-    position: absolute;
-    top: 105%;
-    left: 0;
-    width: 100%;
-    height: 5px;
-    background-color: var(--light-color-text);
-}
-
-.filter-slice {
-    width: 100%;
-    height: 100%;
-    background-color: var(--filter-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.slice-container:hover .image-slice{
-    background-size: 200%;
-}
 
 /* ************** FOOTER STYLES ************** */
 
@@ -219,34 +120,7 @@
 
 /* ************** RESPONSIVE DESIGN ************** */
 
-/* ************** RESPONSIVE NAVBAR ************** */
-
-@media screen and (min-width: 1024px) {
-    .nav-container {
-        height: 100px;
-        position: absolute;
-        padding: 0 1.5rem;
-    }
-
-    .navbar-nav {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    .nav-link {
-        font-size: 18px;
-    }
-}
-
-/* ************** RESPONSIVE SLICE ************** */
-@media screen and (min-width: 1024px) {
-    .slice-container {
-        width: 50vw;
-        height: 100vh;
-    }
-}
+/* ************** RESPONSIVE FOOTER ************** */
 
 @media screen and (min-width: 1024px) {
     .footer-container {
@@ -265,8 +139,3 @@
         cursor: pointer;
     }
 }
-
-.logo-div img:hover{
-    transform: scale(1.1);
-}
-
