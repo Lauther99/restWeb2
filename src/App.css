@@ -69,6 +69,16 @@ h1, h2{
     font-family: var(--str-font);
 }
 
+@media screen and (max-width: 426px) {
+  h2 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
 /* 
 font-family: 'Belgrano', serif;
 font-family: 'Merriweather', serif;

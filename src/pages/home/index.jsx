@@ -46,7 +46,7 @@ const Home = () => {
 
             <section className='banner-section'>
                 <div className='filter-image'></div>
-                <img src={Caldito} alt="" />
+                <img src={Caldito} alt="Restaurante Donde el Che - Caldo de gallina" />
                 <ul>
                     <li><h2>Desde el corazón de nuestro hogar</h2></li>
                     <li><h2>hacia el tuyo...</h2></li>
