@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 
-const PromosCard = ({ promos }) => {
+const Slider = ({ promos }) => {
   const containerRef = useRef(null);
   const [isScrolling, setIsScrolling] = useState(true);
   
@@ -59,4 +59,4 @@ const PromosCard = ({ promos }) => {
   );
 };
 
-export default PromosCard;
+export default Slider;

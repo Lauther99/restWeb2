@@ -4,7 +4,7 @@ import Footer from '../../components/Footer'
 import Logo from '../../assets/images/logoChe3.png'
 import Caldito from '../../assets/images/homeImage.jpeg'
 
-import Promos from './components/PromosCard'
+import Slider from './components/Slider'
 
 import './styles/index.css'
 
@@ -60,7 +60,8 @@ const Home = () => {
 
             <section className='section promos'>
                 <article className='section-container'>
-                    <Promos promos={promos}/>
+                    <h2>Nuestras promos</h2>
+                    <Slider promos={promos}/>
                 </article>
             </section>
 
@@ -76,15 +77,15 @@ const Home = () => {
             </section>
 
             <section className='section'>
-                <article className='section-container article-ubicacion'>
-                    <div class="google-map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.0841575727195!2d-81.27199592520958!3d-4.578907248089638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x90364548d78fc855%3A0x19ba6fdddd6c662f!2sDonde%20el%20Che!5e0!3m2!1ses!2spe!4v1713833618114!5m2!1ses!2spe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+                <article className='section-container ubicacion'>
                     <ul>
                         <li><h2 className='section-title'>Encuéntranos</h2></li>
                         <li><p className='section-text'>Estamos ubicados en Av. A 47-49 Lateral, frente a la Municipalidad provincial de Talara.</p></li>
                         <li><a className='btn-box' href={linkGMaps} target='_blank' rel='noopener noreferrer'>Ver en maps</a></li>
                     </ul>
+                    <div class="google-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.0841575727195!2d-81.27199592520958!3d-4.578907248089638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x90364548d78fc855%3A0x19ba6fdddd6c662f!2sDonde%20el%20Che!5e0!3m2!1ses!2spe!4v1713833618114!5m2!1ses!2spe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </article>
             </section>
 

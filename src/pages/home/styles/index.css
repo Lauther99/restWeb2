@@ -1,4 +1,4 @@
-.home-container{
+btn.home-container{
     width: 100vw;
 }
 
@@ -66,7 +66,7 @@
 }
 
 .banner-section ul li .btn-box{
-    margin-top: 10rem;
+    margin-top: 8rem;
 }
 
 .btn-box{
@@ -78,7 +78,7 @@
     position: relative;
     clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0 100%);
     text-align: center;
-    font-weight: 600;
+    font-weight: 400;
     background-color: #151515;
     backdrop-filter: blur(400px);
     color: #ffffff;
@@ -103,8 +103,10 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 1140px;
-    padding: 3rem;
+    width: calc(100% - 6rem);
+    max-width: 1140px;
+    /* padding: 3rem; */
+    margin: 3rem;
     position: relative;
     gap: 1.5rem; 
 }
@@ -140,14 +142,12 @@
     font-size: 16px;
 }
 
-.article-ubicacion {
+.ubicacion {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 1140px;
-    padding: 3rem;
     position: relative;
-    gap: 1.5rem; 
+    gap: 1.5rem;
 }
 
 .google-map {
@@ -162,7 +162,7 @@
     border-radius: 8px;
 }
 
-.article-ubicacion ul {
+.ubicacion ul {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -198,11 +198,16 @@
 }
 
 /* ************** CARD STYLES ************** */
+.promos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .promos .section-container{
     width: 100%;
     overflow: hidden;
-    padding: 0;
-    margin: 3rem;
+    flex-direction: column;
 }
 
 .scroller{
@@ -247,11 +252,32 @@
     }
   }
 
+  @media screen and (max-width: 1226px) {
+    .promos .section-container{
+        padding: 0 3rem;
+    }
+  }
+
 
 @media screen and (max-width: 769px) {
+    .banner-section ul li h2,
+    .section article h2 {
+        font-size: 36px;
+    }
+
     .section-container{
         flex-direction: column;
         width: 100%;
+    }
+
+    .active{
+        width: 350px;
+        height: 350px;
+        transition: all .5s;
+    }
+
+    .images-scroller.paused {
+        animation-play-state: running;
     }
 
     .btn-box{
@@ -265,12 +291,12 @@
         clip-path: none;
     }
 
-    .article-menu ul, .article-ubicacion ul {
+    .article-menu ul, .ubicacion ul {
         width: 100%;
         gap: 16px;
     }
 
-    .article-menu ul .btn-box, .article-ubicacion ul .btn-box{
+    .article-menu ul .btn-box, .ubicacion ul .btn-box{
         width: 100%;
         clip-path: none;
         border-radius: 8px;
@@ -281,20 +307,16 @@
 }
 
 @media screen and (max-width: 426px) {
-    .banner-section ul li h2,
-    .section article h2 {
-        font-size: 36px;
-    }
     .section-container, 
-    .article-ubicacion, 
+    .ubicacion, 
     .article-delivery ul,
     .promos .section-container{
         padding: 16px;
+        margin: 0;
     }
 
     .promos .section-container{
         margin: 0;
-        overflow: scroll;
     }
 
     .btn-box{

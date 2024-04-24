@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Belgrano&family=Merriweather:wght@100;400;700;900&family=Secular+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 
 :root {
     --main-color: #722d14;
@@ -13,8 +14,10 @@
 
     --filter-color: #15151557;
 
-    --str-font: "Rubik", sans-serif;
-    /* --str-font: 'Secular One', sans-serif; */
+    /* --str-font: "Rubik", sans-serif; */
+    /* --str-font: "Oswald", sans-serif; */
+    --str-font: "Concert One", sans-serif;
+
     --text-font: "Open Sans", sans-serif;
 }
 
@@ -67,6 +70,8 @@ p {
 h1, h2{
     font-weight: 100;
     font-family: var(--str-font);
+    color: #fff;
+    text-transform: uppercase;
 }
 
 @media screen and (max-width: 426px) {
