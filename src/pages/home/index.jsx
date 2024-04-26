@@ -48,8 +48,7 @@ const Home = () => {
                 <div className='filter-image'></div>
                 <img src={Caldito} alt="Restaurante Donde el Che - Caldo de gallina" />
                 <ul>
-                    <li><h2>Desde el corazón de nuestro hogar</h2></li>
-                    <li><h2>hacia el tuyo...</h2></li>
+                    <li><h2>Desde el corazón de nuestro hogar<br />hacia el tuyo...</h2></li>
                     <li>
                         <a className='btn-box' href={linkPedido} target='_blank' rel='noopener noreferrer'>
                             Haz tu pedido
