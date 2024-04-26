@@ -5,6 +5,7 @@ import Logo from '../../assets/images/logoChe3.png'
 import Caldito from '../../assets/images/homeImage.jpeg'
 
 import Slider from './components/Slider'
+import Slider2 from './components/Slider2'
 
 import './styles/index.css'
 
@@ -33,7 +34,6 @@ const Home = () => {
     ];
 
     const linkPedido = "https://api.whatsapp.com/send?phone=51956433143&text=Quiero%20hacer%20un%20pedido"
-
     const linkCartaPdf = "https://acortar.link/TlnolE"
     const linkCartaDrive = "https://acortar.link/eQTpxK"
     const linkGMaps = "https://acortar.link/cdvAzH"
@@ -61,7 +61,8 @@ const Home = () => {
             <section className='section promos'>
                 <article className='section-container'>
                     <h2>Nuestras promos</h2>
-                    <Slider promos={promos}/>
+                    <Slider2 promos={promos}/>
+                    {/* <Slider promos={promos}/> */}
                 </article>
             </section>
 
