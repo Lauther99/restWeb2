@@ -7,29 +7,36 @@ import Caldito from '../../assets/images/homeImage.jpeg'
 import Slider from './components/Slider'
 import Slider2 from './components/Slider2'
 
+import p1 from '../../assets/images/promos/1.jpg'
+import p2 from '../../assets/images/promos/2.jpg'
+import p3 from '../../assets/images/promos/3.jpg'
+import p4 from '../../assets/images/promos/4.jpg'
+import p5 from '../../assets/images/promos/5.jpg'
+import alitas from '../../assets/images/promos/11.jpg'
+
 import './styles/index.css'
 
 const Home = () => {
 
     let promos = [
         {
-            imagen: "https://drive.usercontent.google.com/download?id=1SgU5IxZcHc2JVL1r2MxKrbKEvPAmEHIw",
+            imagen: p1,
 
         },
         {
-            imagen: "https://drive.usercontent.google.com/download?id=1hc32uEw-sdC0D3rkEY8m6Z94oLclY_sG",
+            imagen: p2,
 
         },
         {
-            imagen: "https://drive.usercontent.google.com/download?id=1cHs92YohELf86X-y63BUv5iWUE9ygtJl",
+            imagen: p3,
 
         },
         {
-            imagen: "https://drive.google.com/uc?export=view&id=1BdFLz_j9XuRV9bS08oRYkYLbClv4B5Lx",
+            imagen: p4,
 
         },
         {
-            imagen: "https://drive.google.com/uc?export=view&id=1zcSVRn66JSN34TL4Culq7YfdiBQzQCu0",
+            imagen: p5,
         }
     ];
 
@@ -67,7 +74,7 @@ const Home = () => {
 
             <section className='section'>
                 <article className='section-container article-menu'>
-                    <img src="https://drive.google.com/uc?export=view&id=1i5xP-hfYmqbw_kbpTU0dJTsiKIgcg-eK" alt="Restaurante Donde el che - Alitas a la BBQ" />
+                    <img src={alitas} alt="Restaurante Donde el che - Alitas a la BBQ" />
                     <ul>
                         <li><h2 className='section-title'>Explora Nuestro Menú</h2></li>
                         <li><p className='section-text'>Explora nuestra selección de sabores marinos, parrillas, ceviches y más. En nuestra carta encontrarás una variedad de platillos deliciosos, preparados con los mejores ingredientes para satisfacer tu apetito y deleitar tu paladar. Sumérgete en una experiencia culinaria inolvidable con nosotros.</p></li>
